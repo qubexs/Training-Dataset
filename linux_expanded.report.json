@@ -1,0 +1,26 @@
+{
+ "merged": 1403,
+ "dupes": 0,
+ "train": 1333,
+ "val": 70,
+ "sources": {
+  "hub_upgraded_rows": 1350,
+  "hub_total": 1384,
+  "singletons_malay_leads": 34,
+  "tool_rows": 10,
+  "gap_rows": 9
+ },
+ "qc": {
+  "invalid": 0,
+  "tool_rows": 10,
+  "tool_bad": 0,
+  "fence": 1363,
+  "errsol": 1359,
+  "bilingual": 1369
+ },
+ "notes": [
+  "90/90 hub outputs rewritten (bilingual+safe-readonly-fence+error); singletons got Malay leads",
+  "tool OBSERVATIONs are structural (fields+exit codes), live-run pending Linux/Colab host",
+  "bash -n NOT runnable on this Windows host; rerun on Linux before QLoRA"
+ ]
+}

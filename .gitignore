@@ -1,0 +1,19 @@
+# Python / ML
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+.vscode/
+.idea/
+
+# Keep all dataset files tracked - do NOT ignore *.jsonl
+# Large intermediates stay tracked (repo < 100MB, no LFS needed)

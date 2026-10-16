@@ -1,0 +1,19 @@
+{
+ "artifact": "sql_preview50.jsonl",
+ "lines": 50,
+ "valid_json": true,
+ "schema_ok": true,
+ "bilingual_ms_en": 50,
+ "instr_bilingual": 50,
+ "with_sql_fence": 45,
+ "error_plus_solution_rows": 50,
+ "tool_rows": 5,
+ "toolcall_json_parseable": true,
+ "sqlite_execution": "50/50",
+ "sources": {
+  "base_upgrades": 25,
+  "gfg_gap_paraphrased": 20,
+  "tool_verified": 5
+ },
+ "note": "GFG sql-tutorial used as topic checklist only (paraphrase, no verbatim). SERIAL/AUTO_INCREMENT normalized to sqlite INTEGER PRIMARY KEY with dialect note. Off-topic lsof-like row spotted in sql_clean -> excluded from preview."
+}

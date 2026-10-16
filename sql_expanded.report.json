@@ -1,0 +1,52 @@
+{
+ "merged": 4815,
+ "extra_offtopic_dropped": 0,
+ "train": 4574,
+ "val": 241,
+ "sources": {
+  "sql_clean_base": 4933,
+  "gfg_checklist_paraphrased": true,
+  "preview50_template": true
+ },
+ "qc": {
+  "invalid": 0,
+  "bilingual": 4933,
+  "fence_sql": 4883,
+  "error_solution_rows": 4933,
+  "tool_rows": 50,
+  "tool_json_bad": 0,
+  "sqlite_validated": "4933/4933",
+  "topics": {
+   "create": 90,
+   "insert": 199,
+   "select": 639,
+   "where": 243,
+   "update": 331,
+   "delete": 331,
+   "orderby": 397,
+   "join": 199,
+   "groupby": 716,
+   "alter": 177,
+   "index": 89,
+   "txn": 1,
+   "agg": 243,
+   "explain": 122,
+   "cte": 1,
+   "like": 121,
+   "distinct": 176,
+   "between": 121,
+   "inlist": 121,
+   "drop": 88,
+   "window": 440,
+   "leftjoin": 88
+  }
+ },
+ "notes": [
+  "GFG sql-tutorial as checklist only (paraphrase, no verbatim).",
+  "SERIAL/AUTO_INCREMENT normalized to sqlite INTEGER PRIMARY KEY with dialect note.",
+  "TOOL via write_file+run_python sqlite, real OBS (50 rows). Rerun live on Colab for final confirm.",
+  "Tightened off-topic filter caught lsof-like rows missed earlier.",
+  "Post-build dedupe: 118 exact full-row dupes dropped (instruction collision from long-orig truncation); resplit 95/5 seed 42."
+ ],
+ "exact_dupes_dropped": 118
+}

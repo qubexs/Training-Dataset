@@ -1,0 +1,30 @@
+{
+ "merged": 5987,
+ "exact_dupes_dropped": 102,
+ "train": 5688,
+ "val": 299,
+ "sources": {
+  "orig_bash": 5419,
+  "preview50": 50,
+  "w3schools": 103,
+  "ss64": 327,
+  "gnu": 190
+ },
+ "qc": {
+  "invalid": 0,
+  "short_lt20": 0,
+  "pilcrow": 0,
+  "raw_CR": 0,
+  "tool_rows": 133,
+  "error_solution_rows": 118,
+  "bilingual": 670
+ },
+ "bash_n": "NOT-RUNNABLE-ON-THIS-HOST (bash.exe stub hangs); rerun bash -n + shellcheck on Colab/Linux before QLoRA",
+ "fixes_applied": [
+  "ss64 178 syntax refetched full (800ch), CR stripped, 1 stub dropped",
+  "w3schools 7 junk rewritten (index/intro/getstarted/commands/ls/tool)",
+  "gnu titles normalized (numbering+pilcrow removed), 68 sections given runnable examples, summaries trimmed",
+  "3 short orig rows expanded incl. IFS=null correctness bug (IFS=; -> IFS=)",
+  "preview50 50 gold rows merged (2 tool-JSON quote bugs fixed)"
+ ]
+}

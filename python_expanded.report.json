@@ -1,0 +1,27 @@
+{
+ "merged": 5432,
+ "dupes_dropped": 0,
+ "train": 5161,
+ "val": 271,
+ "sources": {
+  "hub_gold_rows_upgraded": 1564,
+  "hub_total": 5363,
+  "scraped_new": 49,
+  "tool_verified": 20
+ },
+ "qc": {
+  "invalid": 0,
+  "tool_rows": 29,
+  "tool_json_bad": 0,
+  "fence_rows": 1628,
+  "fences_compiled": "1524/1524",
+  "error_solution_rows": 1604,
+  "bilingual": 1633
+ },
+ "notes": [
+  "hub: 92/92 Tier-1 outputs rewritten (bilingual+fence+error); 107/108 runtime-verified, 1 network-dependent",
+  "singletons repaired: nota.txt setup, try/except self-contained, pathlib setup, json teks defined, logging port defined, api.contoh.my->example.com",
+  "non-ASCII inside code fences normalized to ASCII for portability",
+  "tool OBSERVATIONs are real captured stdout (20/20 ran OK)"
+ ]
+}
